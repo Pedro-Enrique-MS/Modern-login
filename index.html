@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Modern Login Page</title>
+</head>
+
+<body>
+    <main>
+    <div class="container" id="container">
+        <div class="form-container sign-up">
+            <form action="#" method="post">
+                <h1>Crie Sua Conta</h1>
+                <div class="social-icons">
+                    <a href="#" class="icon"><i class="fa-brands fa-google"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <span>Ou preencha abaixo para se registrar:</span>
+                <input type="text" placeholder="Digite seu Nome">
+                <input type="email" placeholder="Digite seu Email">
+                <div class="password-container"  style="position: relative">
+                <input type="password" id="signup-password" placeholder="Digite sua Senha">
+
+                <span class="toggle-password" data-target="signup-password" style="position: absolute; top: 50%; right: 10px; transform: translateY(-50%); cursor: pointer;">
+                <i class="fa fa-eye"></i> </span>
+                </div>
+                <button type="submit">Continuar</button>
+                </div>
+                
+            </form>
+
+
+
+        <div class="form-container sign-in">
+            <form action="#"  method="post">
+                <h1>Entrar</h1>
+                <div class="social-icons">
+                    <a href="#" class="icon"><i class="fa-brands fa-google"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <span>ou preencha abaixo:</span>
+                <input type="email" placeholder="Digite seu Email">
+                <div class="password-container"  style="position: relative">
+                    <input type="password" id="signin-password" placeholder="Digite sua Senha" >
+                    <span class="toggle-password" data-target="signin-password" style="position: absolute; top: 50%; right: 10px; transform: translateY(-50%); cursor: pointer;">
+                    <i class="fa fa-eye"></i></span>
+                  
+                </div>
+                 <a class="forgot" href="#">Esqueci minha senha</a>
+                <button type="submit">Continuar</button>
+            </form>
+        </div>
+
+
+
+        <section class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>Boas vindas</h1>
+                    <p>Já tem cadastro conosco?</p>
+                    <button class="hidden" id="login">Entre na sua conta</button>
+                </div>
+
+
+                <div class="toggle-panel toggle-right">
+                    <h1>Não tem cadastro?</h1>
+                    <p>Registre-se com seus dados pessoais para usar todos nossos serviços</p>
+                    <button class="hidden" id="register">Cadastre-se</button>
+                </div>
+            </div>
+        </section>
+    </div>
+    </main>
+
+    <div id="mensagem-sucesso" class="mensagem-oculta">Enviado com sucesso!</div>
+    <script src="script.js"></script>
+</body>
+
+</html>
